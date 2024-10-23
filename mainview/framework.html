@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-<!-- 
+<!--
         /**
         *  SysMocap Main GUI (display when boot finish)
         *
         *  A part of SysMocap, open sourced under Mozilla Public License 2.0
-        * 
+        *
         *  https://github.com/xianfei/SysMocap
-        * 
+        *
         *  xianfei 2022.3
-        */ 
+        */
     -->
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>SysMocap</title>
+    <title>AI主播实时直播互动系统</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../fonts/fonts.css" />
     <link rel="stylesheet" href="style.css" />
@@ -89,10 +89,10 @@
             </button>
             <!-- Show App Name -->
             <!-- <img src="../icons/sysmocap.ico" style="display: inline-block;width: 28px;position: fixed;top: 8px;left: 12px;" v-show="platform!='darwin'"> -->
-            <div style="display: inline-block; position: relative;width: 200px;"
+            <div style="display: inline-block; position: relative;width: 350px;"
                 v-bind:style="{ marginLeft: platform=='darwin'?'88px':'28px'}">
                 <span class="text-titlebar-sysmocap">
-                    SysMocap
+                    AI主播实时直播互动系统
                 </span>
                 <div class="titlebar-ver">
                     Beta, v{{appVersion}}
@@ -204,7 +204,7 @@
                             </p>
                             <p v-show="showModelImporter==1">
                                 {{language.tabModelLib.suppotFormat}}
-                                <a href="#" onclick="ipcRenderer.send('openDocument')">{{language.tabModelLib.here}}</a>
+                                <!--<a href="#" onclick="ipcRenderer.send('openDocument')">{{language.tabModelLib.here}}</a>-->
                             </p>
                             <p v-show="showModelImporter==2&&modelImporterImg==''">
                                 {{language.tabModelLib.dragImage}}
@@ -338,14 +338,14 @@
                         <option value="camera">{{language.tabMocap.camera}}</option>
                         <option value="file">{{language.tabMocap.videoFile}}</option>
                     </select>
-                    
+
                     <span style="margin-left: 70px"></span>
                     <button class="mdui-btn xf-button" onclick="window.startMocap(this)" style="width: 120px;padding-right: 20px;">
                         <i class="mdui-icon material-icons">play_arrow</i>{{language.tabMocap.start}}
                     </button>
-                    
 
-                    
+
+
                     <div style="margin-top: 10px" v-show="videoSource == 'file'">
                         <button class="mdui-btn xf-button" id="chooseFile">
                             {{language.tabMocap.chooseVideo}}
@@ -369,7 +369,7 @@
 
             <div v-show="tab=='settings'" style="max-width: 550px; margin: auto">
                 <div class="text-titlebar-sysmocap" style="font-size: 32px;-webkit-user-select: text; margin-top: 15px">
-                    SysMocap<span style="margin-left: 5px; font-size: 18px;">by xianfei</span>
+                    AI主播实时直播互动系统<span style="margin-left: 5px; font-size: 18px;">炫视智能</span>
                 </div>
                 <div class="mdui-text-color-theme" style="-webkit-user-select: text;">
                     {{language.app.name}}
@@ -496,6 +496,7 @@
                     </div>
                 </div>
                 <div style="height: 20px"></div>
+                <!--
                 <div class="settings-item">
                     <label class="mdui-switch">
                         <span><i class="mdui-icon material-icons"
@@ -504,6 +505,7 @@
                         <i class="mdui-switch-icon"></i>
                     </label>
                 </div>
+                -->
                 <!-- Setting Tab: Show Document -->
                 <!-- <h1 class="mdui-text-color-theme" v-show="platform!=='web'">
                     {{language.tabSettings.document.name}}
@@ -805,7 +807,7 @@
                         <input type="range" step="0.1" min="0" max="1" value="0.7" />
                     </label>
                 </div>
-                <!-- Setting Tab: About -->
+                <!-- Setting Tab: About
                 <h1 class="mdui-text-color-theme" v-show="platform!=='web'">
                     {{language.tabSettings.about.name}}
                 </h1>
@@ -892,6 +894,7 @@
                         </div>
                     </div>
                 </div>
+                -->
                 <!-- Setting Tab: Dev -->
                 <h1 class="mdui-text-color-theme" v-show="platform!=='web'">
                     {{language.tabSettings.dev.name}}

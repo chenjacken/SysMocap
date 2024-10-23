@@ -1,5 +1,5 @@
 {
-  "name": "sysmocap",
+  "name": "AI主播实时直播互动系统",
   "version": "0.7.2",
   "description": "Video-based motion capture system.",
   "main": "main.js",

@@ -2,7 +2,7 @@ module.exports = {
     languages: {
         zh: {
             app: {
-                name: "视频驱动虚拟角色动作的自动生成系统",
+                name: "视频驱动虚拟角色动作的AI主播",
             },
             titlebar: {
                 modelLib: "模型库",
@@ -15,7 +15,7 @@ module.exports = {
                 optAdd: "导入",
                 optHide: "隐藏",
                 dragModel: "把模型拖到这儿来~",
-                suppotFormat: "支持VRM/GLB/GLTF/FBX，详细说明参见",
+                suppotFormat: "支持VRM/GLB/GLTF/FBX",
                 here: "这里",
                 dragImage: "把图片拖到这儿来~",
                 open: "打开",
@@ -134,7 +134,7 @@ module.exports = {
                 optAdd: "Import",
                 optHide: "Hide",
                 dragModel: "Drag model here",
-                suppotFormat: "Supported VRM/GLB/GLTF/FBX, details see",
+                suppotFormat: "Supported VRM/GLB/GLTF/FBX",
                 here: " here",
                 dragImage: "Drag image here",
                 open: "Open",
